@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/favicon.ico.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>The Planets</title>
+
+</head>
+    <!--confirm redirect on click-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var planetLinks = document.querySelectorAll('.two a');
+            planetLinks.forEach(function(link) {
+                link.addEventListener("click", function(event) {
+                    if (!window.confirm("Do you want to leave this page?")) {
+                        event.preventDefault();
+                    }
+                });
+            });
+        });
+    </script>
+<body>
+
+    <!--nav bar-->
+<header>
+    <nav>
+        <ul class="nav_links">
+            <li><a href="facts.html">Facts</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="https://nineplanets.org/">Original Content</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="contact.html"><button>Contact</button></a>
+</header>
+
+
+<!--class one for css-->
+    <div class="container">
+        <section class="one">
+            <h1>Planets</h1>
+            <h2>Our solar system has eight planets, and it has five dwarf planets.</h2>
+            <h3>They are all located in the outside of the Milky Way Galaxy.</h3>
+            <h5>Let us know if you would like to purchase a Solar System Planet Globe!</h5>
+        </section>
+
+<!--class two for css-->
+        <section class="two">
+            <h1>What is a Planet?</h1>
+            <h2>We live on a planet. You can't quite give a definitive example of a planet,</h2>
+            <h3>Click <a href="https://spaceplace.nasa.gov/planet-what-is/en/">here</a> to understand what a planet really is.</h3>
+            <h4>Please hold shift and hover over the planets to scroll through.</h4>
+        </section>
+        
+    </div>
+
+    <!--scroll nav bottom-->
+    <div class="scroller snaps-inline">
+        <div class="earth">
+            <img src="./images/earth.png" alt="Earth">
+            <p>Earth</p>
+        </div>
+        <div class="moon">
+            <img src="./images/moon.png" alt="Moon">
+            <p>Moon</p>
+        </div>
+        <div class="venus">
+            <img src="./images/venus.png" alt="Venus">
+            <p>Venus</p>
+        </div>
+        <div class="mars">
+            <img src="./images/mars.png" alt="Mars">
+            <p>Mars</p>
+        </div>
+        <div class="sun">
+            <img src="./images/sun.png" alt="Sun">
+            <p>Sun</p>
+        </div>
+        <div class="uranus">
+            <img src="./images/uranus.png" alt="Uranus">
+            <p>Uranus</p>
+        </div>
+        <div class="saturn">
+            <img src="./images/saturn.png" alt="Saturn">
+            <p>Saturn</p>
+        </div>
+        <div class="pluto">
+            <img src="./images/pluto-1.png" alt="Pluto">
+            <p>Pluto</p>
+        </div>
+        <div class="neptune">
+            <img src="./images/neptune.png" alt="Neptune">
+            <p>Neptune</p>
+        </div>
+        <div class="mercury">
+            <img src="./images/mercury.png" alt="Mercury">
+            <p>Mercury</p>
+        </div>
+        <div class="jupiter">
+            <img src="./images/jupiter.png" alt="Jupiter">
+            <p>Jupiter</p>
+        </div>
+        <div class="haumea">
+            <img src="./images/haumea.png" alt="Haumea">
+            <p>Haumea</p>
+        </div>
+        <div class="eris">
+            <img src="./images/eris.png" alt="Eris">
+            <p>Eris</p>
+        </div>
+        <div class="ceres">
+            <img src="./images/ceres.png" alt="Ceres">
+            <p>Ceres</p>
+        </div>
+    </div>
+    <!--nav bar-->
+<header>
+    <nav>
+        <ul class="nav_links">
+            <li><a href="facts.html">Facts</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="https://nineplanets.org/">Original Content</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="contact.html"><button>Contact</button></a>
+</header>
+
+<!--footer-->
+<div class="footerNav">
+    <ul>
+        <li><a href="https://nineplanets.org/privacy/">Copyright Information</a></li>
+        <li><a href="https://nineplanets.org/">Original Documentation</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>    
+    </ul>
+</div>
+<div class="footerbottom">
+    <p>Copyright &copy;2024; Designed by <span class="designer">Hayden & Enrique</span></p>
+</div>
+    
+
+</body>
+</html>

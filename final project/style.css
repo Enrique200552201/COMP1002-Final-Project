@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  scrollbar-width: none; /* this is firefox */
+  -ms-overflow-style: none; /* this is ms edge */
+}
+
+/* hide scrollbar webkit based browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*page one*/
+.one{
+    background-image: url("images/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.one h1 {
+    text-align: left;
+    position: absolute;
+    left: 105px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Poppins", sans-serif;
+    font-size: 65px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+.one h2 {
+    text-align: left;
+    position: absolute;
+    left: 105px;
+    top: 50%;
+    transform: translateY(+65%);
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+.one h3 {
+    text-align: left;
+    position: absolute;
+    left: 105px;
+    top: 50%;
+    transform: translateY(+145%);
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+.one h5 {
+    text-align: left;
+    position: absolute;
+    left: 105px;
+    top: 50%;
+    transform: translateY(+215%);
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+/*page two*/
+.two{
+    background-image: url("images/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.two h1 {
+    text-align: left;
+    position: absolute;
+    left: 105px;
+    top: 50%;
+    transform: translateY(+750%);
+    font-family: "Poppins", sans-serif;
+    font-size: 65px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+.two h2 {
+    text-align: left;
+    position: absolute;
+    left: 105px;
+    top: 50%;
+    transform: translateY(+2150%);
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+.two h3 {
+    text-align: left;
+    position: absolute;
+    left: 105px;
+    top: 50%;
+    transform: translateY(+2250%);
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+.two h4 {
+    text-align: left;
+    position: absolute;
+    left: 105px;
+    top: 50%;
+    transform: translateY(+480%);
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+/*clickable redirect*/
+h3 a {
+color: yellow;
+}
+
+/*nav scrollable*/
+
+.scroller {
+/*spacing etc*/
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: 14%;
+
+/*scroller*/
+overflow-x: auto;
+overscroll-behavior-inline: contain;
+
+/*height/left-right position*/
+position: absolute;
+left: 75px;
+top: 50%;
+transform: translateY(+125%);
+}
+
+/*makes sure it doesnt mess up scroll, and jumps to next img*/
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+/*img size*/
+.scroller img {
+    width: 100%; 
+    height: auto;
+}
+
+.scroller p {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+}
+
+/* nav bar */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    padding: 20px 10%;
+}
+
+.nav_links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav_links li a {
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 18px;
+}
+
+.nav_links li a:hover {
+    color: grey;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;   
+}
+
+button:hover {
+    background-color: grey;
+
+}
+
+/* nav bar */
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+    position: absolute; /* Position the footer relative to its containing block */
+    bottom: 0; /* Position the footer at the bottom of its containing block */
+    left: 0; /* Align the footer to the left */
+    right: 0; /* Align the footer to the right */
+    z-index: 1000; /* Adjust the z-index as needed */
+}
+
+.footerNav {
+    position: absolute; /* Position the footer navigation relative to its containing block */
+    bottom: -745px; /* Position it at the bottom of the containing block */
+    left: 50%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Center the element horizontally */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    font-size: 17px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+
+.footerNav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerbottom {
+    position: absolute; /* Position the bottom content relative to its containing block */
+    bottom: -745px; /* Adjust as needed */
+    left: 15%; /* Align to the center horizontally */
+    transform: translateX(-50%); /* Center the element horizontally */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}

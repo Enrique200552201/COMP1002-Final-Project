@@ -1,0 +1,204 @@
+ /*css from original project **specific to facts.html*
+
+ /*Default setting for all browers*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: bordex-box;
+  }
+  /*Set default setting for the whole page*/
+  html, body {
+    background-color:black;
+    padding: 10px;
+  }
+  /*All img in the site linked to this css file will have this setting*/
+  img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  
+  /*Navigation links color*/
+  .navlinks, a {
+    color:#FF9800;
+  }
+  
+  .navlinks {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /*Class planet all sections from that class */
+  .planet, section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+  }
+  
+  .planet, section .wide{
+    grid-column: span 2;
+  }
+  
+  .planet, section .tall{
+    grid-row: span 2;
+  }
+  
+  .planet, section .big{
+    grid-column: span 2;
+  }
+  
+  /*planet*/
+  .planet, section, img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px; 
+    border-color: azure;
+  }
+  /*Paragraph font color white for better reading in a black ground.*/
+  .planet, section, p{
+    color: white;
+  }
+  
+  .planet {
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  }
+  
+  /*hayden css facts.html*/
+  .wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .planet {
+    width: calc(50% - 10px); 
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  img {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  
+  .content { 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    text-align: center; 
+  }
+  
+  .content:hover {
+    opacity: 1;
+  }
+  
+  .content h1 {
+    font-size: 24px;
+    color: #ffe100;
+    margin-bottom: 15px;
+  }
+  
+  .content p {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .content > * {
+    transform: translateY(25px);
+    transition: transform 0.6s;
+  }
+  
+  .content:hover > * {
+    transform: translateY(0px);
+  }
+  
+  /* hide default scrollbars for browser */
+  html,
+  body {
+    scrollbar-width: none; /* this is firefox */
+    -ms-overflow-style: none; /* this is ms edge */
+  }
+  
+  /* hide scrollbar webkit based browsers */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* nav bar */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  padding: 20px 10%;
+}
+
+.nav_links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav_links li a {
+  color: white;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 18px;
+}
+
+.nav_links li a:hover {
+  color: grey;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;   
+}
+
+button:hover {
+  background-color: grey;
+
+}
+

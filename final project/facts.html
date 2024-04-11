@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title>Planet-Facts</title>
+    <!--confirm redirect on click-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var planetLinks = document.querySelectorAll('.planet a');
+            planetLinks.forEach(function(link) {
+                link.addEventListener("click", function(event) {
+                    if (!window.confirm("Do you want to leave this page?")) {
+                        event.preventDefault();
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    
+<!--header from index1-->
+    <header>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="https://nineplanets.org/">Original Content</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="contact.html"><button>Contact</button></a>
+    </header>
+    
+    <!---planets-->
+<div class="wrapper">
+    <div class="image">
+        <div class="planet">
+            <img src="./images/earth.png" alt="Earth">
+            <div class="content">
+                <a href="https://nineplanets.org/earth/">
+                    <h1>Earth</h1>
+                </a>   
+                <p>Earth is about 4.54 billion years old.</p>
+                <p>Earth is approximately 510.1 million square kilometers.</p>
+                <p>About 71% of Earth's surface is covered by water.</p>
+                <p>Earth rotates every 24 hours, creating day and night.</p>
+            </div>
+        </div>
+        <div class="planet">
+            <img src="./images/mars.png" alt="Mars">
+            <div class="content">
+                <a href="https://nineplanets.org/mars/">
+                    <h1>Mars</h1>
+                </a>   
+                <p>Mars is about 4.6 billion years old.</p>
+                <p>Mars has a diameter of approximately 6,779 kilometers.</p>
+                <p>Mars has a thin atmosphere primarily composed of carbon dioxide.</p>
+                <p>Mars has two moons, Phobos and Deimos.</p>
+            </div>
+        </div>
+        <div class="planet">
+            <img src="./images/venus.png" alt="Venus">
+            <div class="content">
+                <a href="https://nineplanets.org/venus/">
+                    <h1>Venus</h1>
+                </a>                
+                <p>Venus is about 4.5 billion years old.</p>
+                <p>Venus has a diameter of approximately 12,104 kilometers.</p>
+                <p>Venus has a thick atmosphere primarily composed of carbon dioxide.</p>
+                <p>Venus is often called Earth's "sister planet" due to their similar size and composition.</p>
+            </div>
+        </div>
+        <div class="planet">
+            <img src="./images/jupiter.png" alt="Jupiter">
+            <div class="content">
+                <a href="https://nineplanets.org/jupiter/">
+                    <h1>Jupiter</h1>
+                </a>                   
+                <p>Jupiter is about 4.6 billion years old.</p>
+                <p>Jupiter is the largest planet in our solar system, with a diameter of approximately 139,822 kilometers.</p>
+                <p>Jupiter has a thick atmosphere primarily composed of hydrogen and helium.</p>
+                <p>Jupiter has a strong magnetic field and more than 75 moons, including the four largest known as the Galilean moons: Io, Europa, Ganymede, and Callisto.</p>
+            </div>
+        </div>
+        <div class="planet">
+            <img src="./images/saturn.png" alt="Saturn">
+            <div class="content">
+                <a href="https://nineplanets.org/saturn/">
+                    <h1>Saturn</h1>
+                </a>                   
+                <p>Saturn is about 4.5 billion years old.</p>
+                <p>Saturn has a diameter of approximately 116,460 kilometers.</p>
+                <p>Saturn is known for its distinctive rings, which are primarily made up of ice particles and debris.</p>
+                <p>Saturn has more than 80 moons, with its largest moon, Titan, being larger than the planet Mercury.</p>
+
+            </div>
+        </div>
+        <div class="planet">
+            <img src="./images/uranus.png" alt="Uranus">
+            <div class="content">
+                <a href="https://nineplanets.org/uranus/">
+                    <h1>Uranus</h1>
+                </a>                   
+                <p>Uranus is about 4.5 billion years old.</p>
+                <p>Uranus has a diameter of approximately 50,724 kilometers.</p>
+                <p>Uranus is unique among the planets in our solar system because it rotates on its side.</p>
+                <p>Uranus has a thin ring system and 27 known moons.</p>
+            </div>
+        </div>
+        <div class="planet">
+            <img src="./images/neptune.png" alt="Neptune">
+            <div class="content">
+                <a href="https://nineplanets.org/neptune/">
+                    <h1>Neptune</h1>
+                </a>   
+                <p>Neptune is about 4.5 billion years old.</p>
+                <p>Neptune has a diameter of approximately 49,244 kilometers.</p>
+                <p>Neptune is the farthest planet from the Sun in our solar system.</p>
+                <p>Neptune's atmosphere is primarily composed of hydrogen, helium, and methane.</p>
+            </div>
+        </div>
+        <div class="planet">
+            <img src="./images/ceres.png" alt="Ceres">
+            <div class="content">
+                <a href="https://nineplanets.org/ceres/">
+                    <h1>Ceres</h1>
+                </a>   
+                <p>Ceres is about 4.6 billion years old.</p>
+                <p>Ceres is the largest object in the asteroid belt between Mars and Jupiter.</p>
+                <p>Ceres has a diameter of approximately 940 kilometers.</p>
+                <p>Ceres is considered a dwarf planet and is the only dwarf planet located in the inner solar system.</p>
+            </div>
+        </div>
+        <div class="planet">
+            <img src="./images/pluto-1.png" alt="Pluto">
+            <div class="content">
+                <a href="https://nineplanets.org/pluto/">
+                    <h1>Pluto</h1>
+                </a>   
+                <p>Pluto is about 4.6 billion years old.</p>
+                <p>Pluto was considered the ninth planet in our solar system until it was reclassified as a dwarf planet in 2006.</p>
+                <p>Pluto has a diameter of approximately 2,377 kilometers.</p>
+                <p>Pluto has a thin atmosphere primarily composed of nitrogen, methane, and carbon monoxide.</p>
+            </div>
+        </div>
+        <div class="planet">
+            <img src="./images/eris.png" alt="Eris">
+            <div class="content">
+                <a href="https://nineplanets.org/eris/">
+                    <h1>Eris</h1>
+                </a>   
+                <p>Eris is about 4.6 billion years old.</p>
+                <p>Eris is one of the largest known dwarf planets in our solar system.</p>
+                <p>Eris has a diameter of approximately 2,326 kilometers.</p>
+                <p>Eris was discovered in 2005 and is located in the scattered disc, a distant region of the solar system.</p>
+            </div>
+        </div>
+        <div class="planet">
+            <img src="./images/sun.png" alt="Sun">
+            <div class="content">
+                <a href="https://nineplanets.org/sun/">
+                    <h1>Sun</h1>
+                </a>   
+                <p>The Sun is about 4.6 billion years old.</p>
+                <p>The Sun has a diameter of approximately 1.39 million kilometers.</p>
+                <p>The Sun is a main-sequence star, and its energy is generated through nuclear fusion reactions in its core.</p>
+            </div>
+        </div>
+        
+        <div class="planet">
+            <img src="./images/makemake.png" alt="Makemake">
+            <div class="content">
+                <a href="https://nineplanets.org/makemake/">
+                    <h1>Makemake</h1>
+                </a>   
+                <p>Makemake is about 4.5 billion years old.</p>
+                <p>Makemake has a diameter of approximately 1,434 kilometers.</p>
+                <p>Makemake is a dwarf planet located in the Kuiper belt.</p>
+            </div>
+        </div>
+        
+        <div class="planet">
+            <img src="./images/haumea.png" alt="Haumea">
+            <div class="content">
+                <a href="https://nineplanets.org/haumea/">
+                    <h1>Haumea</h1>
+                </a>   
+                <p>Haumea is about 4.5 billion years old.</p>
+                <p>Haumea has a diameter of approximately 1,960 kilometers.</p>
+                <p>Haumea is a dwarf planet located in the Kuiper belt.</p>
+            </div>
+        </div>
+        
+        <div class="planet">
+            <img src="./images/moon.png" alt="Moon">
+            <div class="content">
+                <a href="https://nineplanets.org/moon/">
+                    <h1>Moon</h1>
+                </a>   
+                <p>The Moon is about 4.5 billion years old.</p>
+                <p>The Moon has a diameter of approximately 3,474 kilometers.</p>
+                <p>The Moon is Earth's only natural satellite.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
